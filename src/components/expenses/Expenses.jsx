@@ -153,9 +153,7 @@ const Expenses = () => {
       id: Math.random().toString(),
       ...enteredExpenseData,
     };
-    setExpenses((prevExpenses) => {
-      return [...prevExpenses];
-    });
+    setActiveId(0);
     setExpenses((prevExpenses) => {
       return [...prevExpenses, expenseData];
     });

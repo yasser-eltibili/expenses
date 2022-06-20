@@ -144,6 +144,7 @@ const Expenses = () => {
         expenses.filter((item) => item.date.getFullYear() == optionValue)
       );
     }
+    setActiveId(0);
     return filtered;
   };
 
@@ -152,8 +153,11 @@ const Expenses = () => {
       id: Math.random().toString(),
       ...enteredExpenseData,
     };
-    setFiltered((prevFiltered) => {
-      return [...prevFiltered, expenseData];
+    setExpenses((prevExpenses) => {
+      return [...prevExpenses];
+    });
+    setExpenses((prevExpenses) => {
+      return [...prevExpenses, expenseData];
     });
   };
 

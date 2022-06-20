@@ -1,7 +1,6 @@
 import React from 'react';
 import './ExpensesList.css';
 const ExpensesList = ({ pages, activeId }) => {
-  console.log(pages);
   return (
     <div>
       <h3>Expenses List</h3>

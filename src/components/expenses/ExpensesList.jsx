@@ -1,11 +1,12 @@
 import React from 'react';
 import './ExpensesList.css';
-const ExpensesList = ({ paging }) => {
+const ExpensesList = ({ pages, activeId }) => {
+  console.log(pages);
   return (
     <div>
       <h3>Expenses List</h3>
       <ul className='expenses-list'>
-        {paging.map((expense) => (
+        {pages[activeId].map((expense) => (
           <li key={expense.id}>
             <div className='date-container expense-container'>
               <span className='month-container'>

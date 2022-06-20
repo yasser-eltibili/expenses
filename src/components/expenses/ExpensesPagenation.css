@@ -2,9 +2,11 @@ ul.pagination li.page-link {
     background-color: #333 !important;
     border-color: #222 !important;
     cursor: pointer;
+    color: #aaa;
 }
 
 ul.pagination li.page-link.active {
     background-color: #222 !important;
     border-color: #222 !important;
+    color: #fff;
 }

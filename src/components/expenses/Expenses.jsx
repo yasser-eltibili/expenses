@@ -129,7 +129,7 @@ const Expenses = () => {
   ]);
   let [filtered, setFiltered] = useState([...expenses]);
   let optionValue;
-  let [paging, setPaging] = useState(expenses.slice(0, 4));
+  let [paging, setPaging] = useState(expenses.slice(0, 5));
   let [activeId, setActiveId] = useState(0);
 
   const selectChangeHandler = (event) => {
@@ -173,7 +173,6 @@ const Expenses = () => {
     setPaging(pages[id]);
     setActiveId(id);
   };
-  console.log(activeId);
 
   return (
     <div className='expenses'>
@@ -183,7 +182,7 @@ const Expenses = () => {
         selectChangeHandler={selectChangeHandler}
         filterExpensesHandler={filterExpensesHandler}
       />
-      <ExpensesList paging={paging} />
+      <ExpensesList pages={pages} activeId={activeId} />
       <ExpensesPagenation
         pages={pages}
         choosePage={choosePage}

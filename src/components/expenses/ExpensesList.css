@@ -1,0 +1,56 @@
+ul.expenses-list li {
+    background: #333;
+    margin: 15px 5px;
+    border-radius: 10px;
+    padding: 5px 15px;
+    list-style: none;
+    color: #fff;
+    box-shadow: 0 -5px 3px -3px #222, 0 5px 3px -3px #222;
+}
+
+ul.expenses-list {
+   padding-left: 0;
+}
+
+.expense-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+span.year-container {
+    background: #333;
+    margin: 0 5px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.title-container {
+    font-size: 24px;
+    width: calc(100% - 310px);
+    text-align: center;
+}
+
+span.month-container {
+    font-size: 16px;
+}
+
+.date-container {
+    width: 150px;
+    background: #000;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 5px 0;
+}
+
+.price-container {
+    color: gold;
+    text-align: right;
+    width: 150px;
+    font-size: 18px;
+}
+
+.date-container span {
+    display: block;
+    text-align: center;
+}

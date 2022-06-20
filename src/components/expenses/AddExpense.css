@@ -1,0 +1,12 @@
+form.add-expense-form {
+    margin-bottom: 20px;
+    color: #fff;
+}
+.submit-button-container .btn {
+    width: 100%;
+}
+.expense-input-container  {
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+}
